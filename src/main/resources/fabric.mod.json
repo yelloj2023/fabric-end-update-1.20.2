@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "end-update",
+	"version": "${version}",
+	"name": "End Update",
+	"description": "This is a Mod to enhance the gameplay of the end!",
+	"authors": [
+		"yelloj!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/end-update/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.yelloj.endupdate.EndUpdate"
+		],
+		"client": [
+			"net.yelloj.endupdate.EndUpdateClient"
+		],
+		"fabric-datagen": [
+			"net.yelloj.endupdate.EndUpdateDataGenerator"
+		]
+	},
+	"mixins": [
+		"end-update.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.3",
+		"minecraft": "~1.20.2",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
